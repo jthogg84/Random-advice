@@ -1,0 +1,98 @@
+:root {
+  --light-cyan:hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+  --greyish-blue: hsl(217, 19%, 38%);
+  --dark-greyish-blue:hsl(217, 19%, 24%);
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: var(--dark-greyish-blue);
+  color: var(--light-cyan);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: rgba(78, 93, 115, 0.541);
+  border-radius: 15px;
+  text-align: center;
+  padding: 1.5rem 2.5rem;
+  max-width: 45rem;
+  -webkit-box-shadow: 5px 5px 20px 10px #28333e;
+          box-shadow: 5px 5px 20px 10px #28333e;
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 16px;
+  color: var(--neon-green);
+}
+
+.container p {
+  font-size: 28px;
+}
+
+.container .divider {
+  max-width: 100%;
+}
+
+.circle {
+  position: relative;
+  left: 50%;
+  cursor: pointer;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  bottom: -50px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--neon-green);
+  border-radius: 50%;
+}
+
+.circle img {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.circle :hover {
+  -webkit-box-shadow: 0px 0px 50px 10px var(--neon-green);
+          box-shadow: 0px 0px 50px 10px var(--neon-green);
+}
+
+#advice-id, #advice-text, .divider {
+  padding: 0 1.5rem;
+}
+
+@media screen and (max-width: 575px) {
+  body {
+    margin: 0 2rem;
+  }
+  .circle {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    bottom: -50px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--neon-green);
+    border-radius: 50%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
